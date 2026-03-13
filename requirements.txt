@@ -1,6 +1,4 @@
 torch
 pillow
 numpy
-python-dotenv
-google-generativeai
-google-genai
+requests

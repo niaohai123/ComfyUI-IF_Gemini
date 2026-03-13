@@ -1,17 +1,14 @@
-from .gemini_node import IFGeminiAdvanced
-from .task_prompt_manager import IFTaskPromptManager, IFPromptCombiner
-from .api_routes import *  # Import API routes
+from .gemini_prompt_node import IFGeminiPrompt
+from .gemini_image_node import IFGeminiImageGen
 
 NODE_CLASS_MAPPINGS = {
-    "IFGeminiNode": IFGeminiAdvanced,
-    "IFTaskPromptManager": IFTaskPromptManager,
-    "IFPromptCombiner": IFPromptCombiner
+    "IFGeminiPromptNode": IFGeminiPrompt,
+    "IFGeminiImageGenNode": IFGeminiImageGen,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "IFGeminiNode": "IF Gemini",
-    "IFTaskPromptManager": "IF Task Prompt Manager",
-    "IFPromptCombiner": "IF Prompt Combiner"
+    "IFGeminiPromptNode": "IF Gemini Prompt",
+    "IFGeminiImageGenNode": "IF Gemini Image Gen",
 }
 
 # Path to web directory relative to this file
